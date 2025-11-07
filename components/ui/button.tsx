@@ -81,17 +81,19 @@ export type ButtonVariantProps = VariantProps<typeof buttonVariants>;
  * Button Component with animation support
  */
 export const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
-  ({ className, variant, size, asChild, children, ...props }, ref) => {
+  ({ className, variant, size, asChild, children, onClick, disabled, type, ...restProps }, ref) => {
     // Note: asChild prop is accepted for API consistency but not currently implemented
     // To fully support asChild, consider using @radix-ui/react-slot
     return (
       <motion.button
         ref={ref}
+        type={type}
+        onClick={onClick}
+        disabled={disabled}
         whileHover={buttonAnimations.hover}
         whileTap={buttonAnimations.tap}
         transition={buttonAnimations.transition}
         className={cn(buttonVariants({ variant, size, className }))}
-        {...props}
       >
         {children}
       </motion.button>

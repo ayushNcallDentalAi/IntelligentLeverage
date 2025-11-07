@@ -16,6 +16,7 @@ import { Navbar } from "@/components/features/navigation";
 import { HeroHeadline } from "./HeroHeadline";
 import { HeroSubheading } from "./HeroSubheading";
 import { HeroCTA } from "./HeroCTA";
+import { HeroTrustLine } from "./HeroTrustLine";
 import type { HeroProps } from "@/lib/types";
 
 export const Hero: React.FC<HeroProps> = ({
@@ -31,11 +32,11 @@ export const Hero: React.FC<HeroProps> = ({
       </div>
 
       {/* Hero Content */}
-      <div className="relative flex flex-col items-center justify-center min-h-screen px-4 py-20 pt-32">
-        <Container maxWidth="lg" centered className="text-center space-y-8 md:space-y-10">
+      <div className="relative flex flex-col items-center justify-center min-h-screen px-4 py-24 pt-[50vh] md:pt-[50vh] lg:pt-[40vh]">
+        <Container maxWidth="lg" centered className="flex flex-col text-center space-y-4 md:space-y-7 lg:space-y-4 gap-[8px]">
           {/* Main Headline - Split into 3 lines */}
           <HeroHeadline>
-            Multiply Your Future
+            <span className="whitespace-nowrap">Multiply Your Future</span>
             <br />
             with Intelligent
             <br />
@@ -47,6 +48,9 @@ export const Hero: React.FC<HeroProps> = ({
 
           {/* CTA Buttons */}
           {cta && <HeroCTA primary={cta.primary} secondary={cta.secondary} />}
+
+          {/* Trust Line */}
+          <HeroTrustLine />
         </Container>
       </div>
     </AuroraBackground>

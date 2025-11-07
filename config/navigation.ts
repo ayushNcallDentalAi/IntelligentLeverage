@@ -10,6 +10,12 @@ export interface NavigationItem {
   href: string;
 }
 
+export interface SocialLink {
+  name: string;
+  href: string;
+  icon: string;
+}
+
 export const navigationConfig = {
   logo: {
     alt: "IntelligentLeverage.AI Logo",
@@ -26,6 +32,32 @@ export const navigationConfig = {
   cta: {
     label: "Get Started",
     href: "#get-started",
+  },
+
+  footer: {
+    tagline: "Multiply your impact with AI-powered leverage",
+    company: "THYNK Unlimited",
+    year: 2025,
+
+    navigation: [
+      { label: "About", href: "/about" },
+      { label: "Programs", href: "#programs" },
+      { label: "Blog", href: "/blog" },
+      { label: "Contact", href: "/contact" },
+    ] as NavigationItem[],
+
+    legal: [
+      { label: "Privacy Policy", href: "/privacy" },
+      { label: "Terms of Service", href: "/terms" },
+      { label: "Cookie Policy", href: "/cookies" },
+    ] as NavigationItem[],
+
+    social: [
+      { name: "Twitter", href: "https://twitter.com/intelligentleverage", icon: "twitter" },
+      { name: "LinkedIn", href: "https://linkedin.com/company/intelligentleverage", icon: "linkedin" },
+      { name: "YouTube", href: "https://youtube.com/@intelligentleverage", icon: "youtube" },
+      { name: "GitHub", href: "https://github.com/intelligentleverage", icon: "github" },
+    ] as SocialLink[],
   },
 } as const;
 

@@ -23,7 +23,7 @@ export const HeroHeadline: React.FC<HeroHeadlineProps> = ({ children }) => {
       animate={heroAnimations.headline.animate}
       transition={heroAnimations.headline.transition}
     >
-      <Heading level="h1">{children}</Heading>
+      <Heading level="h1" className="">{children}</Heading>
     </motion.div>
   );
 };

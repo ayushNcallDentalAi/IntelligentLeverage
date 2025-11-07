@@ -8,3 +8,4 @@ export { Hero } from "./Hero";
 export { HeroHeadline } from "./HeroHeadline";
 export { HeroSubheading } from "./HeroSubheading";
 export { HeroCTA } from "./HeroCTA";
+export { HeroTrustLine } from "./HeroTrustLine";

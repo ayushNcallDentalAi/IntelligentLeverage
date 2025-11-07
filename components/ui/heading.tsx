@@ -28,7 +28,7 @@ const headingSizes: Record<HeadingLevel, string> = {
  */
 export const Heading = React.forwardRef<HTMLHeadingElement, HeadingProps>(
   ({ level = "h2", gradient = false, className, children, ...props }, ref) => {
-    const Component = level as keyof JSX.IntrinsicElements;
+    const Component = level as React.ElementType;
 
     const baseClasses = cn(
       headingSizes[level],

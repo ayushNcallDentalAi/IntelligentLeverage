@@ -1,51 +1,60 @@
 /**
  * Home Page Component
  *
- * Clean, modular landing page following SOLID principles:
- * - Single Responsibility: Orchestrates sections, delegates rendering to components
- * - Open/Closed: Extensible via configuration without modification
- * - Dependency Inversion: Depends on siteConfig abstraction
- *
- * Architecture:
- * - Hero section with navbar, headline, and CTAs
- * - About section
- * - Resources section
- * - Product section
+ * Complete IntelligentLeverage.AI landing page with all sections:
+ * - Hero with navbar and CTAs
+ * - Problem section (About)
+ * - Solution section (Resources)
+ * - How It Works with timeline
+ * - Programs with pricing cards
+ * - Founder bio and achievements
+ * - Final CTA
+ * - Footer with newsletter
  */
 
 import React from "react";
-import { Hero } from "@/components/features/hero";
-import { About } from "@/components/features/about";
-import { Resources } from "@/components/features/resources";
-import { Product } from "@/components/features/product";
+import {
+  Hero,
+  Problem,
+  Solution,
+  HowItWorks,
+  Programs,
+  Founder,
+  FinalCTA,
+  Footer,
+} from "@/components/features";
 import { siteConfig } from "@/config/site";
 
 export default function Home() {
   return (
     <>
+      {/* Hero Section */}
       <Hero
         headline={siteConfig.hero.headline}
         subheading={siteConfig.hero.subheading}
         cta={siteConfig.hero.cta}
       />
 
-      <About
-        title={siteConfig.about.title}
-        subtitle={siteConfig.about.subtitle}
-        description={siteConfig.about.description}
-      />
+      {/* Problem Section - AI Overwhelm Pain Points */}
+      <Problem />
 
-      <Resources
-        title={siteConfig.resources.title}
-        subtitle={siteConfig.resources.subtitle}
-        description={siteConfig.resources.description}
-      />
+      {/* Solution Section - Four Pillars */}
+      <Solution />
 
-      <Product
-        title={siteConfig.product.title}
-        subtitle={siteConfig.product.subtitle}
-        description={siteConfig.product.description}
-      />
+      {/* How It Works Timeline */}
+      <HowItWorks />
+
+      {/* Programs/Pricing */}
+      <Programs />
+
+      {/* Founder Section */}
+      <Founder />
+
+      {/* Final CTA */}
+      <FinalCTA />
+
+      {/* Footer */}
+      <Footer />
     </>
   );
 }

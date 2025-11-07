@@ -31,7 +31,7 @@ export const HeroCTA: React.FC<HeroCTAProps> = ({ primary, secondary }) => {
       initial={heroAnimations.cta.initial}
       animate={heroAnimations.cta.animate}
       transition={heroAnimations.cta.transition}
-      className="flex flex-col sm:flex-row items-center justify-center gap-4 pt-4"
+      className="flex flex-col sm:flex-row items-center justify-center gap-4"
     >
       {primary && (
         <motion.a

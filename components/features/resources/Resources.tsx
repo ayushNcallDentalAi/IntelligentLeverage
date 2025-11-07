@@ -20,7 +20,6 @@ export const Resources: React.FC<SectionProps> = ({
   description,
   children,
   className,
-  ...props
 }) => {
   return (
     <motion.section
@@ -30,7 +29,6 @@ export const Resources: React.FC<SectionProps> = ({
       viewport={{ once: true, margin: "-100px" }}
       variants={sectionVariants}
       className={className}
-      {...props}
     >
       <Container maxWidth="xl" centered className="py-20 md:py-32">
         <div className="text-center space-y-6">
