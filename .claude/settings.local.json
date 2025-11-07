@@ -1,0 +1,16 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(dir:*)",
+      "Bash(nul)",
+      "Bash(npm run build:*)",
+      "Bash(find:*)",
+      "Bash(taskkill //F //PID 5604)",
+      "mcp__context7__resolve-library-id",
+      "Bash(taskkill:*)",
+      "Bash(npm run dev:*)"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}
