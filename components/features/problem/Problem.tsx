@@ -32,7 +32,7 @@ const painPoints = [
 
 export const Problem: React.FC = () => {
   return (
-    <section className="py-16 md:py-24 bg-background">
+    <section id="about" className="py-16 md:py-24 bg-background">
       <Container maxWidth="xl">
         <motion.div
           initial="hidden"

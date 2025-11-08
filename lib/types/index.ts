@@ -132,10 +132,18 @@ export interface NavigationItem {
 }
 
 /**
+ * Header component props
+ */
+export interface HeaderProps {
+  className?: string;
+}
+
+/**
  * Navbar component props
  */
 export interface NavbarProps {
   className?: string;
+  showLogo?: boolean;
 }
 
 /**

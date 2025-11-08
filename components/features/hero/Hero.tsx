@@ -12,7 +12,7 @@
 
 import React from "react";
 import { AuroraBackground, Container } from "@/components/ui";
-import { Navbar } from "@/components/features/navigation";
+import { Header } from "@/components/features/navigation";
 import { HeroHeadline } from "./HeroHeadline";
 import { HeroSubheading } from "./HeroSubheading";
 import { HeroCTA } from "./HeroCTA";
@@ -26,10 +26,8 @@ export const Hero: React.FC<HeroProps> = ({
 }) => {
   return (
     <AuroraBackground>
-      {/* Navbar positioned at top */}
-      <div className="fixed top-0 left-0 right-0 z-50">
-        <Navbar />
-      </div>
+      {/* Header positioned at top */}
+      <Header />
 
       {/* Hero Content */}
       <div className="relative flex flex-col items-center justify-center min-h-screen px-4 py-24 pt-[50vh] md:pt-[50vh] lg:pt-[40vh]">

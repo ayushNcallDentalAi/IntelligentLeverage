@@ -6,3 +6,4 @@
 export { ApplicationForm } from "./ApplicationForm";
 export { NewsletterForm } from "./NewsletterForm";
 export { ContactForm } from "./ContactForm";
+export { StrategyCallForm } from "./StrategyCallForm";

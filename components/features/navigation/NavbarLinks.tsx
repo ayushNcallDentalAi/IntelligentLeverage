@@ -25,7 +25,7 @@ export const NavbarLinks: React.FC<NavbarLinksProps> = ({ items, className }) =>
         >
           <a
             href={item.href}
-            className="text-sm text-gray-900 dark:text-gray-100 hover:text-gray-600 dark:hover:text-gray-400 transition-colors font-medium"
+            className="text-sm text-black dark:text-gray-100 hover:text-black/70 dark:hover:text-gray-400 transition-colors font-geist-sans font-medium"
           >
             {item.label}
           </a>

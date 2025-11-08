@@ -6,7 +6,6 @@
  * - Problem section (About)
  * - Solution section (Resources)
  * - How It Works with timeline
- * - Programs with pricing cards
  * - Founder bio and achievements
  * - Final CTA
  * - Footer with newsletter
@@ -16,9 +15,8 @@ import React from "react";
 import {
   Hero,
   Problem,
-  Solution,
+  Features,
   HowItWorks,
-  Programs,
   Founder,
   FinalCTA,
   Footer,
@@ -39,13 +37,10 @@ export default function Home() {
       <Problem />
 
       {/* Solution Section - Four Pillars */}
-      <Solution />
+      <Features />
 
       {/* How It Works Timeline */}
       <HowItWorks />
-
-      {/* Programs/Pricing */}
-      <Programs />
 
       {/* Founder Section */}
       <Founder />

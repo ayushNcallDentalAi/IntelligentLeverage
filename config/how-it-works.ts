@@ -9,6 +9,7 @@ import {
   Rocket,
   GraduationCap,
   Settings,
+  Network,
 } from "lucide-react";
 
 export interface ProcessStep {
@@ -51,6 +52,14 @@ export const processSteps: ProcessStep[] = [
     description:
       "Build and deploy AI systems with 1-on-1 support. We help you execute your strategy and overcome technical challenges.",
     icon: Settings,
+  },
+  {
+    id: "multiply",
+    step: 5,
+    title: "Multiply",
+    description:
+      "Share wins, compound knowledge, elevate others",
+    icon: Network,
   },
 ];
 

@@ -20,33 +20,54 @@ import { NavbarMobileMenu } from "./NavbarMobileMenu";
 import { navigationConfig } from "@/config/navigation";
 import type { NavbarProps } from "@/lib/types";
 
-export const Navbar: React.FC<NavbarProps> = ({ className }) => {
+export interface NavbarComponentProps extends NavbarProps {
+  showLogo?: boolean;
+}
+
+export const Navbar: React.FC<NavbarComponentProps> = ({ className, showLogo = false }) => {
   const [isOpen, setIsOpen] = useState(false);
 
   const toggleMenu = () => setIsOpen(!isOpen);
   const closeMenu = () => setIsOpen(false);
 
   return (
-    <div className={cn("flex justify-center w-full py-6 px-4", className)}>
-      <div className="flex items-center justify-between px-6 py-3 bg-white dark:bg-zinc-900/90 backdrop-blur-xl rounded-full shadow-lg w-full max-w-3xl relative z-10 border border-gray-200/50 dark:border-white/10">
-        {/* Logo */}
-        <NavbarLogo
-          alt={navigationConfig.logo.alt}
-          href={navigationConfig.logo.href}
-        />
-
+    <>
+      {/* Desktop Pill Navbar (no logo) */}
+      <div className={cn(
+        "hidden md:flex items-center justify-between px-8 py-3",
+        "bg-white/30 dark:bg-zinc-900/90 backdrop-blur-xl rounded-full",
+        "shadow-lg border border-gray-200/30 dark:border-white/10",
+        "w-auto max-w-3xl relative z-10",
+        className
+      )}>
         {/* Desktop Navigation */}
-        <NavbarLinks items={navigationConfig.navItems} />
+        <NavbarLinks items={navigationConfig.navItems} className="mr-8" />
 
         {/* Desktop CTA Button */}
         <NavbarCTA
           label={navigationConfig.cta.label}
           href={navigationConfig.cta.href}
         />
+      </div>
+
+      {/* Mobile Navbar (with logo and hamburger) */}
+      <div className={cn(
+        "md:hidden flex items-center justify-between w-full px-6 py-4",
+        "bg-white dark:bg-zinc-900/90 backdrop-blur-xl",
+        "shadow-lg border-b border-gray-200/50 dark:border-white/10",
+        className
+      )}>
+        {/* Mobile Logo */}
+        {showLogo && (
+          <NavbarLogo
+            alt={navigationConfig.logo.alt}
+            href={navigationConfig.logo.href}
+          />
+        )}
 
         {/* Mobile Menu Button */}
         <motion.button
-          className="md:hidden flex items-center"
+          className="flex items-center ml-auto"
           onClick={toggleMenu}
           whileTap={{ scale: 0.9 }}
           aria-label="Toggle menu"
@@ -62,6 +83,6 @@ export const Navbar: React.FC<NavbarProps> = ({ className }) => {
         items={navigationConfig.navItems}
         cta={navigationConfig.cta}
       />
-    </div>
+    </>
   );
 };

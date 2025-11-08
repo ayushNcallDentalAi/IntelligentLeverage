@@ -44,7 +44,6 @@ export const programs: Program[] = [
       text: "Join Community",
       href: "/apply?program=community",
     },
-    popular: true,
     whoItsFor: "Entrepreneurs and business owners ready to integrate AI into their operations and connect with like-minded innovators.",
     outcomes: [
       "Master practical AI implementation strategies",

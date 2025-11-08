@@ -44,10 +44,10 @@ export const founderCards: FounderCard[] = [
     tags: ["Experience", "Impact"],
     title: "Proven Track Record of Success",
     content: [
-      "🚀 10+ Years in Tech — Built and scaled multiple technology companies with proven systems and frameworks.",
-      "🎯 500+ Entrepreneurs Helped — Guided hundreds of business owners in implementing AI strategies that drive real results.",
-      "🤖 Creator of PartnerAI — Developed the revolutionary framework for building agentic AI systems that execute business strategy.",
-      "📚 AI Integration Expert — Recognized thought leader in practical AI implementation for entrepreneurs and small businesses.",
+      "Technology Leadership (10+ Years) — Built and scaled multiple technology companies with proven systems and frameworks.",
+      "Entrepreneurial Impact (500+ Leaders) — Guided hundreds of business owners in implementing AI strategies that drive measurable results.",
+      "PartnerAI Framework (Creator) — Developed a revolutionary methodology for building agentic AI systems that execute business strategy.",
+      "AI Integration Expertise — Recognized thought leader in practical AI implementation for entrepreneurs and small businesses.",
     ],
     metadata: [
       { label: "Started", value: "Since 2014" },

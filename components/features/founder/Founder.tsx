@@ -16,8 +16,8 @@ import { fadeInUp, staggerContainer } from "@/config/animations";
 
 export const Founder: React.FC = () => {
   return (
-    <section id="founder" className="py-32">
-      <div className="container flex flex-col items-center gap-16">
+    <section id="founder" className="py-16 md:py-24">
+      <div className="container flex flex-col items-center gap-12">
         {/* Section Header */}
         <motion.div
           initial="hidden"
@@ -41,20 +41,20 @@ export const Founder: React.FC = () => {
           whileInView="visible"
           viewport={{ once: true, margin: "-100px" }}
           variants={staggerContainer}
-          className="grid gap-y-10 sm:grid-cols-12 sm:gap-y-12 md:gap-y-16 lg:gap-y-20"
+          className="grid gap-y-8 sm:grid-cols-12 sm:gap-y-10 md:gap-y-12 lg:gap-y-14"
         >
           {founderCards.map((card) => (
             <motion.div
               key={card.id}
               variants={fadeInUp}
-              className="order-last sm:order-first sm:col-span-12 lg:col-span-10 lg:col-start-2"
+              className="order-last sm:order-first sm:col-span-12 lg:col-span-12"
             >
-              <Card className="border-0 bg-transparent shadow-none">
+              <Card className="border-0 bg-transparent shadow-none px-50">
                 <div className="grid gap-y-6 sm:grid-cols-10 sm:gap-x-5 sm:gap-y-0 md:items-center md:gap-x-8 lg:gap-x-12">
                   {/* Content Column (Left - 5 cols) */}
-                  <div className="sm:col-span-5">
+                  <div className="sm:col-span-5 px-5 sm:px-0">
                     {/* Tags */}
-                    <div className="mb-4 md:mb-6">
+                    <div className="mb-6 md:mb-8">
                       <div className="flex flex-wrap gap-3 text-xs uppercase tracking-wider text-muted-foreground md:gap-5 lg:gap-6">
                         {card.tags.map((tag) => (
                           <span key={tag}>{tag}</span>
@@ -68,7 +68,7 @@ export const Founder: React.FC = () => {
                     </h3>
 
                     {/* Content */}
-                    <div className="mt-4 space-y-4 text-muted-foreground md:mt-5">
+                    <div className="mt-6 space-y-4 text-muted-foreground md:mt-8">
                       {Array.isArray(card.content) ? (
                         card.content.map((paragraph, index) => (
                           <p key={index}>{paragraph}</p>
@@ -109,7 +109,7 @@ export const Founder: React.FC = () => {
                   </div>
 
                   {/* Image Column (Right - 5 cols) */}
-                  <div className="order-first sm:order-last sm:col-span-5">
+                  <div className="order-first sm:order-last sm:col-span-5 px-5 sm:px-0">
                     <div className="aspect-[16/9] overflow-clip rounded-lg border border-border">
                       <img
                         src={card.image}

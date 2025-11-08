@@ -19,7 +19,7 @@ export const HowItWorks: React.FC = () => {
   return (
     <section
       id="how-it-works"
-      className="relative py-24 lg:py-32 bg-[#fafafa]"
+      className="relative min-h-screen bg-[#fafafa] py-12 md:py-16 lg:py-20 flex items-center"
     >
       <Container maxWidth="2xl">
         {/* Section Header */}
@@ -28,12 +28,12 @@ export const HowItWorks: React.FC = () => {
           whileInView="visible"
           viewport={{ once: true, margin: "-100px" }}
           variants={fadeInUp}
-          className="text-center mb-16 lg:mb-24"
+          className="text-center mb-6 lg:mb-8"
         >
           <Heading level="h2" className="mb-6">
-            Multiply
+            Your Path to AI Mastery
           </Heading>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
+          <p className="text-lg lg:text-xl text-gray-600 dark:text-gray-400 max-w-3xl mx-auto leading-relaxed">
             Scale your AI leverage across your business. Achieve exponential growth while reclaiming your time and energy.
           </p>
         </motion.div>
@@ -47,12 +47,12 @@ export const HowItWorks: React.FC = () => {
           whileInView="visible"
           viewport={{ once: true }}
           variants={fadeInUp}
-          className="mt-16 lg:mt-24 text-center"
+          className="mt-6 lg:mt-8 text-center"
         >
           <Button size="lg" asChild>
             <a href="/apply">Start Your Application</a>
           </Button>
-          <p className="mt-4 text-sm text-gray-500">
+          <p className="mt-4 text-sm text-gray-500 dark:text-gray-400">
             Limited to 50 new members per quarter
           </p>
         </motion.div>

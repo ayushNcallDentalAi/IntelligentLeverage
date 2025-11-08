@@ -25,7 +25,7 @@ export const SolutionPillar: React.FC<SolutionPillarProps> = ({
       <Card className="h-full hover:shadow-xl hover:-translate-y-2 transition-all duration-300">
         <CardHeader className="space-y-4">
           <div className="flex items-center justify-center w-14 h-14 rounded-full bg-primary/10">
-            <Icon className="w-7 h-7 text-primary" />
+            <Icon className="w-7 h-7 text-gray-500" />
           </div>
           <h3 className="text-xl font-bold">{title}</h3>
         </CardHeader>

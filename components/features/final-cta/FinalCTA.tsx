@@ -19,7 +19,7 @@ export const FinalCTA: React.FC = () => {
   return (
     <section
       id="final-cta"
-      className="relative py-24 lg:py-32 bg-gradient-to-br from-blue-50 via-indigo-50 to-purple-50 overflow-hidden"
+      className="relative py-24 lg:py-32 bg-[#fafafa] overflow-hidden"
     >
       {/* Background Decoration */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
@@ -48,7 +48,7 @@ export const FinalCTA: React.FC = () => {
           {/* Headline */}
           <motion.div variants={fadeInUp}>
             <Heading level="h2" className="mb-6 max-w-4xl mx-auto">
-              Ready to Multiply Your Impact with AI?
+              Ready to Multiply Your Potential?
             </Heading>
           </motion.div>
 
@@ -57,8 +57,7 @@ export const FinalCTA: React.FC = () => {
             variants={fadeInUp}
             className="text-xl lg:text-2xl text-gray-600 mb-12 max-w-3xl mx-auto leading-relaxed"
           >
-            Join the entrepreneurs who are building AI-powered businesses that
-            scale without burning out. Your AI transformation starts here.
+            Join the movement teaching humanity how to leverage intelligence—human and artificial—toward exponential evolution
           </motion.p>
 
           {/* CTA Buttons */}
@@ -68,7 +67,7 @@ export const FinalCTA: React.FC = () => {
           >
             <Button size="lg" className="group" asChild>
               <a href="/apply" className="flex items-center gap-2">
-                Start Your Application
+                Apply to Join
                 <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
               </a>
             </Button>

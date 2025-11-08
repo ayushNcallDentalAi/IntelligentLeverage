@@ -23,10 +23,9 @@ export const navigationConfig = {
   },
 
   navItems: [
-    { label: "Home", href: "/" },
-    { label: "Pricing", href: "#pricing" },
-    { label: "Docs", href: "#docs" },
-    { label: "Projects", href: "#projects" },
+    { label: "About", href: "#about" },
+    { label: "How It Works", href: "#how-it-works" },
+    { label: "Founder", href: "#founder" },
   ] as NavigationItem[],
 
   cta: {
@@ -41,7 +40,6 @@ export const navigationConfig = {
 
     navigation: [
       { label: "About", href: "/about" },
-      { label: "Programs", href: "#programs" },
       { label: "Blog", href: "/blog" },
       { label: "Contact", href: "/contact" },
     ] as NavigationItem[],

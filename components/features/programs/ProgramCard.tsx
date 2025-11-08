@@ -51,15 +51,6 @@ export const ProgramCard: React.FC<ProgramCardProps> = ({
             : "border-gray-200 hover:border-blue-400 shadow-lg hover:shadow-xl"
         )}
       >
-        {/* Popular Badge */}
-        {isPopular && (
-          <div className="absolute -top-4 left-1/2 -translate-x-1/2">
-            <Badge variant="default" className="bg-blue-500 text-white px-6 py-2 text-sm">
-              MOST POPULAR
-            </Badge>
-          </div>
-        )}
-
         {/* Header */}
         <CardHeader className="text-center pb-8">
           {program.badge && (
