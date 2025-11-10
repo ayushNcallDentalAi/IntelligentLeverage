@@ -30,7 +30,7 @@ export const navigationConfig = {
 
   cta: {
     label: "Get Started",
-    href: "#get-started",
+    href: "https://api.leadconnectorhq.com/widget/form/U7ZrY4oXM1dyTpDTtTuL",
   },
 
   footer: {

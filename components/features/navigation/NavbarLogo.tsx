@@ -18,7 +18,7 @@ export const NavbarLogo: React.FC<NavbarLogoProps> = ({
   return (
     <a href={href} className="flex items-center">
       <motion.span
-        className="font-geist-sans text-xl font-bold text-black drop-shadow-[0_2px_6px_rgba(0,0,0,0.4)]"
+        className="font-geist-sans text-xl font-bold text-black"
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 0.3 }}

@@ -68,7 +68,7 @@ export default function ApplyPage() {
                   Schedule a 30-minute consultation to discuss your AI goals
                 </p>
                 <Button variant="outline" className="w-full" asChild>
-                  <a href="/contact">Book Call</a>
+                  <a href="https://api.leadconnectorhq.com/widget/form/U7ZrY4oXM1dyTpDTtTuL">Book Call</a>
                 </Button>
               </div>
 

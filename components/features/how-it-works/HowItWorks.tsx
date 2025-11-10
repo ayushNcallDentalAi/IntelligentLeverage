@@ -50,7 +50,7 @@ export const HowItWorks: React.FC = () => {
           className="mt-6 lg:mt-8 text-center"
         >
           <Button size="lg" asChild>
-            <a href="/apply">Start Your Application</a>
+            <a href="https://api.leadconnectorhq.com/widget/form/U7ZrY4oXM1dyTpDTtTuL">Start Your Application</a>
           </Button>
           <p className="mt-4 text-sm text-gray-500 dark:text-gray-400">
             Limited to 50 new members per quarter

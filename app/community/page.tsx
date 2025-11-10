@@ -140,7 +140,7 @@ export default function CommunityPage() {
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center pt-4">
                 <Button size="lg" asChild>
-                  <a href="/apply?program=community">Join the Community</a>
+                  <a href="https://api.leadconnectorhq.com/widget/form/U7ZrY4oXM1dyTpDTtTuL">Join the Community</a>
                 </Button>
                 <Button size="lg" variant="outline" asChild>
                   <a href="/programs">View Pricing</a>
@@ -343,7 +343,7 @@ export default function CommunityPage() {
 
             <div className="text-center mt-12">
               <Button size="lg" asChild>
-                <a href="/apply?program=community">Apply to Join Community</a>
+                <a href="https://api.leadconnectorhq.com/widget/form/U7ZrY4oXM1dyTpDTtTuL">Apply to Join Community</a>
               </Button>
               <p className="text-sm text-muted-foreground mt-4">
                 $497/month · Cancel anytime · 30-day money-back guarantee

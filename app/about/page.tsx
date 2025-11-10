@@ -6,7 +6,7 @@
 import React from "react";
 import type { Metadata } from "next";
 import { Container, Heading } from "@/components/ui";
-import { Navbar } from "@/components/features/navigation";
+import { Header } from "@/components/features/navigation";
 import { Footer } from "@/components/features/footer";
 import { Card, CardHeader, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui";
@@ -81,10 +81,8 @@ const differentiators = [
 export default function AboutPage() {
   return (
     <>
-      {/* Navbar */}
-      <div className="fixed top-0 left-0 right-0 z-50 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60 border-b">
-        <Navbar />
-      </div>
+      {/* Header */}
+      <Header />
 
       {/* Main Content */}
       <main className="pt-24 pb-16 min-h-screen">
@@ -219,11 +217,11 @@ export default function AboutPage() {
                   </p>
                   <ul className="space-y-3">
                     {[
-                      "Built AI-powered companies generating $50M+ in annual revenue",
-                      "Implemented automation systems saving 10,000+ hours annually",
-                      "Advised Fortune 500 companies on AI transformation",
-                      "Published research on human-AI collaboration",
-                      "Built and sold 3 AI-enabled SaaS businesses",
+                      "Built multiple businesses using AI-powered automation",
+                      "Implemented AI systems to maximize operational efficiency",
+                      "Focused on practical AI applications for real business results",
+                      "Continuously testing and refining AI leverage strategies",
+                      "Passionate about teaching entrepreneurs AI implementation",
                     ].map((achievement, index) => (
                       <li key={index} className="flex items-start gap-3">
                         <Badge variant="default" className="mt-1">✓</Badge>
@@ -252,7 +250,7 @@ export default function AboutPage() {
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <a
-                  href="/apply"
+                  href="https://api.leadconnectorhq.com/widget/form/U7ZrY4oXM1dyTpDTtTuL"
                   className="inline-flex items-center justify-center rounded-full px-6 py-3 text-base font-medium bg-primary text-primary-foreground hover:bg-primary/90 transition-colors"
                 >
                   Apply to Join

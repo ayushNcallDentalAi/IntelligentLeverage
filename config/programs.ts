@@ -42,7 +42,7 @@ export const programs: Program[] = [
     ],
     cta: {
       text: "Join Community",
-      href: "/apply?program=community",
+      href: "https://api.leadconnectorhq.com/widget/form/U7ZrY4oXM1dyTpDTtTuL",
     },
     whoItsFor: "Entrepreneurs and business owners ready to integrate AI into their operations and connect with like-minded innovators.",
     outcomes: [
@@ -68,7 +68,7 @@ export const programs: Program[] = [
     ],
     cta: {
       text: "Apply for Academy",
-      href: "/apply?program=academy",
+      href: "https://api.leadconnectorhq.com/widget/form/U7ZrY4oXM1dyTpDTtTuL",
     },
     whoItsFor: "Serious entrepreneurs ready to invest in building AI-powered systems that execute their business strategy autonomously.",
     outcomes: [
@@ -94,7 +94,7 @@ export const programs: Program[] = [
     ],
     cta: {
       text: "Request Invitation",
-      href: "/apply?program=labs",
+      href: "https://api.leadconnectorhq.com/widget/form/U7ZrY4oXM1dyTpDTtTuL",
     },
     whoItsFor: "Visionary leaders and innovators operating at the cutting edge of AI implementation who want to shape the future of intelligent leverage.",
     outcomes: [

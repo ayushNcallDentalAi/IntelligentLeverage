@@ -215,10 +215,10 @@ export default function ProgramsPage() {
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <Button size="lg" asChild>
-                  <a href="/apply">Apply Now</a>
+                  <a href="https://api.leadconnectorhq.com/widget/form/U7ZrY4oXM1dyTpDTtTuL">Apply Now</a>
                 </Button>
                 <Button size="lg" variant="outline" asChild>
-                  <a href="/contact">Schedule a Call</a>
+                  <a href="https://api.leadconnectorhq.com/widget/form/U7ZrY4oXM1dyTpDTtTuL">Schedule a Call</a>
                 </Button>
               </div>
             </div>

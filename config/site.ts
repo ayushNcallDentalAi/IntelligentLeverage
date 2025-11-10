@@ -20,7 +20,7 @@ export const siteConfig = {
     cta: {
       primary: {
         text: "Get Started",
-        href: "#get-started",
+        href: "https://api.leadconnectorhq.com/widget/form/U7ZrY4oXM1dyTpDTtTuL",
       },
       secondary: {
         text: "Learn More",

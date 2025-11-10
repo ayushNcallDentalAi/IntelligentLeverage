@@ -37,7 +37,7 @@ const contactMethods = [
     title: "Schedule a Call",
     description: "Book a 30-minute strategy session",
     contact: "Available for applicants",
-    action: "/apply",
+    action: "https://api.leadconnectorhq.com/widget/form/U7ZrY4oXM1dyTpDTtTuL",
   },
 ];
 
@@ -211,7 +211,7 @@ export default function ContactPage() {
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <a
-                  href="/apply"
+                  href="https://api.leadconnectorhq.com/widget/form/U7ZrY4oXM1dyTpDTtTuL"
                   className="inline-flex items-center justify-center rounded-full px-6 py-3 text-base font-medium bg-primary text-primary-foreground hover:bg-primary/90 transition-colors"
                 >
                   Apply to Join

@@ -1,59 +1,54 @@
 /**
- * Footer Component
- *
- * Minimal footer with logo, email, about link, and copyright
+ * Footer component with links and social icons
  */
 
-import React from "react";
-import Link from "next/link";
-import { Container } from "@/components/ui/container";
+import Link from 'next/link';
+import { SITE_NAME, FOOTER_LINKS } from '@/app/lib/constants';
 
-export const Footer: React.FC = () => {
-  const currentYear = new Date().getFullYear();
-
+export function Footer() {
   return (
-    <footer className="bg-white border-t border-gray-200">
-      <Container maxWidth="2xl">
-        <div className="py-12 text-center space-y-6">
-          {/* Logo - Black text */}
+    <footer className="relative mt-16 md:mt-24 bg-white">
+      <div className="mx-auto max-w-7xl px-6 py-12 border-t border-gray-200">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
+          {/* Brand Section */}
           <div>
-            <Link href="/">
-              <h2 className="text-2xl font-bold text-black">
-                IntelligentLeverage.AI
-              </h2>
+            <Link href="/" className="flex items-center gap-2 mb-4 group">
+              <span className="text-lg font-semibold tracking-tight text-black transition-colors group-hover:text-blue-600">
+                {SITE_NAME}
+              </span>
             </Link>
-          </div>
-
-          {/* Email */}
-          <div>
-            <a
-              href="mailto:info@intelligentleverage.ai"
-              className="text-gray-600 hover:text-black transition-colors"
-            >
-              info@intelligentleverage.ai
-            </a>
-          </div>
-
-          {/* About Link */}
-          <div>
-            <Link
-              href="/about"
-              className="text-gray-600 hover:text-black transition-colors"
-            >
-              About
-            </Link>
-          </div>
-
-          {/* Separator */}
-          <div className="border-t border-gray-200 pt-6">
-            <p className="text-sm text-gray-500">
-              &copy; {currentYear} THYNK Unlimited. All rights reserved.
+            <p className="text-sm text-gray-600">
+              Scale your AI leverage across your business
             </p>
           </div>
+
+          {/* Ecosystem Links */}
+          <div>
+            <h4 className="text-sm font-medium text-black mb-3">Ecosystem</h4>
+            <ul className="space-y-2">
+              {FOOTER_LINKS.ecosystem.map((link) => (
+                <li key={link.href}>
+                  <Link
+                    href={link.href}
+                    className="text-sm text-gray-600 hover:text-black transition-colors"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    {link.label}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
         </div>
-      </Container>
+
+        {/* Bottom Section */}
+        <div className="flex flex-col sm:flex-row items-center justify-center pt-8 border-t border-gray-200">
+          <p className="text-sm text-gray-600">
+            © {new Date().getFullYear()} {SITE_NAME}. All rights reserved.
+          </p>
+        </div>
+      </div>
     </footer>
   );
-};
-
-Footer.displayName = "Footer";
+}

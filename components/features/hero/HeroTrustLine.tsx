@@ -13,9 +13,9 @@ export interface HeroTrustLineProps {
 
 export const HeroTrustLine: React.FC<HeroTrustLineProps> = ({
   metrics = [
-    "500+ Entrepreneurs",
-    "$50M+ in Combined Revenue",
-    "15+ Industries",
+    "Active Community",
+    "Expert Network",
+    "Collaborative Learning",
   ],
 }) => {
   return (

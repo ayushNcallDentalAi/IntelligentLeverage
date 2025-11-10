@@ -39,7 +39,7 @@ export const FinalCTA: React.FC = () => {
           <motion.div variants={fadeInUp} className="mb-8">
             <Badge
               variant="default"
-              className="bg-gradient-to-r from-blue-500 to-indigo-600 text-white px-6 py-3 text-sm"
+              className="bg-gradient-to-r from-gray-900 to-gray-600 text-white px-6 py-3 text-sm"
             >
               Limited to 50 new members per quarter
             </Badge>
@@ -66,16 +66,9 @@ export const FinalCTA: React.FC = () => {
             className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-8"
           >
             <Button size="lg" className="group" asChild>
-              <a href="/apply" className="flex items-center gap-2">
+              <a href="https://api.leadconnectorhq.com/widget/form/U7ZrY4oXM1dyTpDTtTuL" className="flex items-center gap-2">
                 Apply to Join
                 <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
-              </a>
-            </Button>
-
-            <Button size="lg" variant="secondary" asChild>
-              <a href="/call" className="flex items-center gap-2">
-                <Calendar className="w-5 h-5" />
-                Book Strategy Call
               </a>
             </Button>
           </motion.div>

@@ -49,7 +49,7 @@ export const Founder: React.FC = () => {
               variants={fadeInUp}
               className="order-last sm:order-first sm:col-span-12 lg:col-span-12"
             >
-              <Card className="border-0 bg-transparent shadow-none px-50">
+              <Card className="border-0 bg-transparent shadow-none px-4 sm:px-6 md:px-12 lg:px-48">
                 <div className="grid gap-y-6 sm:grid-cols-10 sm:gap-x-5 sm:gap-y-0 md:items-center md:gap-x-8 lg:gap-x-12">
                   {/* Content Column (Left - 5 cols) */}
                   <div className="sm:col-span-5 px-5 sm:px-0">
@@ -71,10 +71,10 @@ export const Founder: React.FC = () => {
                     <div className="mt-6 space-y-4 text-muted-foreground md:mt-8">
                       {Array.isArray(card.content) ? (
                         card.content.map((paragraph, index) => (
-                          <p key={index}>{paragraph}</p>
+                          <p key={index} className="whitespace-pre-line">{paragraph}</p>
                         ))
                       ) : (
-                        <p>{card.content}</p>
+                        <p className="whitespace-pre-line">{card.content}</p>
                       )}
                     </div>
 
@@ -110,7 +110,7 @@ export const Founder: React.FC = () => {
 
                   {/* Image Column (Right - 5 cols) */}
                   <div className="order-first sm:order-last sm:col-span-5 px-5 sm:px-0">
-                    <div className="aspect-[16/9] overflow-clip rounded-lg border border-border">
+                    <div className="aspect-[4/5] overflow-clip rounded-lg border border-border">
                       <img
                         src={card.image}
                         alt={card.title}
@@ -142,3 +142,4 @@ export const Founder: React.FC = () => {
 };
 
 Founder.displayName = "Founder";
+
